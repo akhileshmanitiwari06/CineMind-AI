@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 streamlit
-opencv-python
+opencv-python-headless
 numpy
 pyscenedetect
 librosa
@@ -11,9 +10,9 @@ gtts
 openai
 deepface
 torch   # deepface may need this; only if not installed by deepface wheel
-=======
+
 streamlit
-opencv-python
+opencv-python-headless
 numpy
 pyscenedetect
 librosa
@@ -24,4 +23,3 @@ gtts
 openai
 deepface
 torch   # deepface may need this; only if not installed by deepface wheel
->>>>>>> 9734f5af8014d8879710876aa29ce7c728326464
