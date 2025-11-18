@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 streamlit
 opencv-python
 numpy
@@ -10,3 +11,17 @@ gtts
 openai
 deepface
 torch   # deepface may need this; only if not installed by deepface wheel
+=======
+streamlit
+opencv-python
+numpy
+pyscenedetect
+librosa
+soundfile
+ffmpeg-python
+python-dotenv
+gtts
+openai
+deepface
+torch   # deepface may need this; only if not installed by deepface wheel
+>>>>>>> 9734f5af8014d8879710876aa29ce7c728326464
