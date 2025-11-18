@@ -1,6 +1,6 @@
 streamlit
-opencv-python-headless
-numpy
+opencv-python-headless==4.12.0.88
+numpy==2.3.5
 git+https://github.com/Breakthrough/PySceneDetect.git
 librosa
 soundfile
@@ -12,14 +12,13 @@ deepface
 torch   # deepface may need this; only if not installed by deepface wheel
 
 streamlit
-opencv-python-headless
-numpy
+opencv-python-headless==4.12.0.88
+numpy==2.3.5
 git+https://github.com/Breakthrough/PySceneDetect.git
 librosa
 soundfile
 ffmpeg-python
 python-dotenv
 gtts
-openai
-deepface
-torch   # deepface may need this; only if not installed by deepface wheel
+fer
+

@@ -1,12 +1,25 @@
 # app.py
+# app.py (top) — graceful import handling for server (OpenCV import)
 import streamlit as st
-from cinemind.core import analyze_video_cinematic, explanations_to_tts
 import tempfile, os
-import cv2
-from PIL import Image
 
+# Try to import core module; if cv2 (or any binary) fails to import on server,
+# show a friendly message and the full traceback in an expander so we can debug.
+try:
+    from cinemind.core import analyze_video_cinematic, explanations_to_tts
+except Exception as e:
+    import traceback
+    tb = traceback.format_exc()
+    st.set_page_config("CineMind AI", layout="wide")
+    st.title("CineMind AI — Movie Scene Explainer (Starter)")
+    st.error("The server failed to import a required binary (likely OpenCV). See full error below.")
+    with st.expander("Full import error (copy this and paste to chat):"):
+        st.code(tb)
+    # Stop the app (prevents redacted crash)
+    st.stop()
 
-st.set_page_config("CineMind AI", layout="wide")
+# If import succeeded, the rest of your app continues below...
+
 st.title("CineMind AI — Movie Scene Explainer (Starter)")
 
 uploaded = st.file_uploader("Upload movie clip (mp4, <=2min recommended)", type=["mp4","mov","avi"])
