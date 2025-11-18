@@ -1,7 +1,7 @@
 streamlit
 opencv-python-headless
 numpy
-pyscenedetect
+git+https://github.com/Breakthrough/PySceneDetect.git
 librosa
 soundfile
 ffmpeg-python
@@ -14,7 +14,7 @@ torch   # deepface may need this; only if not installed by deepface wheel
 streamlit
 opencv-python-headless
 numpy
-pyscenedetect
+git+https://github.com/Breakthrough/PySceneDetect.git
 librosa
 soundfile
 ffmpeg-python
