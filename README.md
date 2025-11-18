@@ -1,46 +1,11 @@
-# CineMind-AI
-AI that explains the psychology, emotion, and cinematography behind movie scenes.
+# CineMind AI — Movie Scene Explainer (Starter)
 
-🎯 Goal
+Quick-start:
+1. python -m venv venv
+2. source venv/bin/activate   # Windows: venv\\Scripts\\activate
+3. pip install -r requirements.txt
+4. streamlit run app.py
 
-Understand camera angles, emotions, dialogue tones → explain “why this scene feels powerful.”
-
-💡 Use Case
-
-Film students, critics, or YouTubers (automatic scene breakdowns).
-
-🧩 Architecture
-
-Video Input → Scene Splitter
-
-Vision Analysis – emotion, brightness, camera angle.
-
-Audio Analysis – background tone, dialogue mood.
-
-LLM Commentary – generate analysis (“This low-angle shot shows dominance…”).
-
-⚙️ Tech Stack
-
-OpenCV + PySceneDetect (scene segmentation)
-
-FER / DeepFace (emotion recognition)
-
-Librosa (audio mood analysis)
-
-GPT / Claude / Gemini (scene explanation)
-
-Streamlit UI
-
-🚀 Steps
-
-Split video into scenes.
-
-Detect faces & emotions per frame.
-
-Analyze lighting + sound.
-
-Prompt LLM:
-
-“Analyze the emotional and cinematic meaning of this scene using visual and audio cues.”
-
-Display summary with emotion graphs + text analysis.
+Notes:
+- Whisper and DeepFace are optional (heavy). If not installed the app will still run with visual/audio heuristics.
+- Ensure ffmpeg is installed and on PATH for audio extraction.
