@@ -1,0 +1,12 @@
+streamlit
+opencv-python
+numpy
+pyscenedetect
+librosa
+soundfile
+ffmpeg-python
+python-dotenv
+gtts
+openai
+deepface
+torch   # deepface may need this; only if not installed by deepface wheel
